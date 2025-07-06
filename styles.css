@@ -21,14 +21,16 @@ margin: 0;
   width: 100%;
   height: 100%;
   background-color: #EBECF0;
-  color: #61677c
+  color: #61677c;
+  display: block;
+
 }
 
 .form {
   display: flex;
   justify-content: center;
   padding: 2em ;
-  margin-top: 8em;
+  margin-top: 4em;
 }
 
 label {
@@ -112,6 +114,7 @@ button {
   border: none;
   border-radius: 5px;
   background-color: #EBECF0;
+  margin: 0 0.5rem;
   
 }
 
