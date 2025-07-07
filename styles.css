@@ -112,7 +112,8 @@ button {
   background-color: #EBECF0;
   margin: 0.5rem ;
   position: absolute;
-  left: 9%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 button:focus{
