@@ -135,7 +135,6 @@ button:hover{
     position: relative;
     width: 100%;
     height: 40dvh;
-    border: 2px #1E8C8D;
     overflow: scroll;
     text-align: center;
     flex-direction: column;
