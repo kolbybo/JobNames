@@ -4,32 +4,33 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100dvw;
   height: 100dvh;
   display: flex;
-margin: 0;
+  margin: 0;
   justify-content: center;
-   font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
-  overflow: hidden
+  overflow: hidden;
+ background-color:  #ebecf0;
 }
 
-
-
+/* Main form screen */
 .container {
   width: 100%;
   height: 100%;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
   color: #61677c;
-position: relative;
-
+  position: relative;
+  filter: none;
 }
 
 .form {
   display: flex;
   justify-content: center;
-  padding: 2em ;
+  padding: 2em;
   margin-top: 4em;
 }
 
@@ -43,99 +44,170 @@ label {
 input {
   height: 3rem;
   margin: 1rem 0;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 3px;
-  background:#EBECF0;
+  background: #ebecf0;
   border: none;
   box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
   width: 80vw;
   transition: all 0.2s ease-in-out;
-   font-size: 2rem;
-    color: #BB6431;
+  font-size: 2rem;
+  color: #bb6431;
 }
 input:focus {
-    border: 0;
-    outline: 0;
-   
+  border: 0;
+  outline: 0;
 }
 #scope {
   height: 3rem;
   width: 80vw;
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-size: 1.5em;
   color: #61677cc6;
   font-weight: bold;
-  box-shadow: -5px -5px 15px #fff, 5px 5px 15px #BABECC;
+  box-shadow: -5px -5px 15px #fff, 5px 5px 15px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 300;
   border: none;
   border-radius: 5px;
-  background-color: #EBECF0;
- -webkit-appearance: none;
+  background-color: #ebecf0;
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
-#scope:focus{
-    outline: none;
-    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+#scope:focus {
+  outline: none;
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }
 
 option {
- font-size: 1rem;
- display: block;
-
+  font-size: 1rem;
+  display: block;
 }
 
-
-
-h2 {
-  text-align: center;
-  margin-top: 3rem;
-
-}
-
-button {
+#btn {
   height: 4rem;
   max-width: 25rem;
   width: 80vw;
   font-size: 2em;
   color: #61677c;
   font-weight: bold;
-  box-shadow: -5px -5px 15px #fff, 5px 5px 15px #BABECC;
+  box-shadow: -5px -5px 15px #fff, 5px 5px 15px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 600;
   border: none;
   border-radius: 5px;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
   display: block;
-   margin: 1rem auto ;
+  margin: 1rem auto;
 }
 
-button:focus{
-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+#btn:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }
 
-button:hover{
-    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+#btn:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 
-#name{
-    font-size: 2rem;
-    color:#1E8C8D ;
-    margin: 1rem;
-    text-align: center;
+.output {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  width: 100%;
+  height: 40dvh;
+  overflow: scroll;
+  text-align: center;
+  flex-direction: column;
 }
 
-.output{
-    display: flex;
-    justify-content: start;
-    position: relative;
-    width: 100%;
-    height: 40dvh;
-    overflow: scroll;
-    text-align: center;
-    flex-direction: column;
+/* Job Name Results  */
+
+.jobname2 {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+.resultScreen {
+  width: 100dvw;
+  height: 100dvh;
+  background-color:#ebecf0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  color: #61677c;
+}
+
+#name {
+  font-size: 3rem;
+  color: #1e8c8d;
+  margin: 1rem 3rem 5rem;
+  text-align: left;
+  overflow-wrap: break-word;
+  
+}
+
+
+.redo {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#restart, span {
+  align-self: center;
+  font-style: italic;
+  font-size: 1.5rem;
+
+  
+  /* remove margin-bottom if adding more text */
+}
+
+/* resubmit button */
+#redobtn{
+  background: none;
+  box-shadow: none;
+  border: none;
+  color: red;
+  font-size: 4rem;
+  margin: 0;
+  cursor: pointer;
+  z-index: 1;
+  
+}
+#redobtn:hover {
+  rotate: -170deg;
+  transition: ease-in-out 1s;
+}
+
+.hidden{
+  display: none
+}
+
+p{
+  font-size: 2rem;
+  margin: 1rem  3rem 51px;
+  font-weight: 300;
+  color: red;
+}
+
+.plainGreeting{
+  margin: 1rem 0.6rem 0 3rem ;
+  font-size: 3rem;
+  color: #1E8C8D;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.greeting{
+  font-size: 3rem;
+  color: red;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
 }
